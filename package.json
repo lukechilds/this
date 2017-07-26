@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/lukechilds/get-root-module",
   "dependencies": {
-    "find-root": "^1.1.0"
+    "pkg-dir": "^2.0.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",

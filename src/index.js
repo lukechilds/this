@@ -1,10 +1,9 @@
 'use strict';
 
-const findRoot = require('find-root');
+const pkgDir = require('pkg-dir');
 
 try {
-	const modulePath = findRoot(process.cwd());
-	module.exports = require(modulePath);
+	module.exports = require(pkgDir.sync());
 } catch (err) {
 	module.exports = undefined;
 }

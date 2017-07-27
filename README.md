@@ -22,6 +22,30 @@ Or if using for tests you'll probably want:
 npm install --save-dev get-root-module
 ```
 
+## Usage
+
+Just require `get-root-module` the same way you would require the root module with a relative path.
+
+e.g instead of:
+
+```js
+import test from 'ava';
+import myPackage from '../';
+
+// and then in sub folders
+import myPackage from '../../';
+```
+
+You can now do:
+
+```js
+import test from 'ava';
+import myPackage from 'get-root-module';
+
+// and then in sub folders it's still just:
+import myPackage from 'get-root-module';
+```
+
 ## License
 
 MIT © Luke Childs

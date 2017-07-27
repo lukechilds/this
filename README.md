@@ -46,6 +46,13 @@ import myPackage from 'get-root-module';
 import myPackage from 'get-root-module';
 ```
 
+e.g without import transpilation:
+
+```js
+const test = require('tape');
+const myPackage = require('get-root-module');
+```
+
 ## License
 
 MIT © Luke Childs

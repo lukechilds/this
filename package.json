@@ -1,6 +1,6 @@
 {
   "name": "get-root-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Traverses up the directory tree and returns the first module found",
   "main": "src/index.js",
   "scripts": {

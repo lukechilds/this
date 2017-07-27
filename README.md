@@ -16,6 +16,12 @@ Starts directory traversal from `process.cwd()` so this should really only be us
 npm install --save get-root-module
 ```
 
+Or if using for tests you'll probably want:
+
+```shell
+npm install --save-dev get-root-module
+```
+
 ## License
 
 MIT © Luke Childs

@@ -1,5 +1,8 @@
 import test from 'ava';
 
-test(`importing doesn't throw`, t => {
-	t.notThrows(() => require('../'));
+const pkgPath = require.resolve('../');
+
+test(`exports root module`, t => {
+	process.chdir('test/helpers/package');
+	t.is(require(pkgPath), 'package');
 });

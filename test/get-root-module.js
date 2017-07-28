@@ -2,7 +2,16 @@ import test from 'ava';
 
 const pkgPath = require.resolve('../');
 
-test(`exports root module`, t => {
+test.afterEach.always(() => {
+	delete require.cache[pkgPath];
+});
+
+test.serial(`exports root module`, t => {
 	process.chdir('test/helpers/package');
 	t.is(require(pkgPath), 'package');
+});
+
+test.serial(`exports undfined if there's no root module`, t => {
+	process.chdir('/');
+	t.is(require(pkgPath), undefined);
 });

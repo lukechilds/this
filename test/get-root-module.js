@@ -1,8 +1,10 @@
 import test from 'ava';
 
+const cwd = process.cwd();
 const pkgPath = require.resolve('../');
 
 test.afterEach.always(() => {
+	process.chdir(cwd);
 	delete require.cache[pkgPath];
 });
 

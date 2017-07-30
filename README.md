@@ -1,5 +1,7 @@
 # this
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lukechilds/root-module.svg)](https://greenkeeper.io/)
+
 > Traverses up the directory tree and returns the first module found
 
 [![Build Status](https://travis-ci.org/lukechilds/this.svg?branch=master)](https://travis-ci.org/lukechilds/this)

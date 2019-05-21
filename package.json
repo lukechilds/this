@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/lukechilds/this",
   "dependencies": {
-    "pkg-dir": "^2.0.0"
+    "pkg-dir": "^4.2.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",

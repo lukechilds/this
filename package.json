@@ -1,6 +1,6 @@
 {
   "name": "this",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Traverses up the directory tree and returns the first module found",
   "main": "src/index.js",
   "scripts": {
